@@ -9,6 +9,13 @@
 %include std_vector.i
 %include exception.i
 
+class QString
+{
+public:
+    static QString fromStdString(const std::string &s);
+    std::string toStdString() const;
+};
+
 %exception{
     try {
         $action

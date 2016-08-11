@@ -12,5 +12,5 @@ set(CMAKE_SWIG_FLAGS "-c++")
 
 SWIG_ADD_MODULE(EverydayMoose csharp EverydayMoose.i)
 
-set(SHARED_LIBS GoldenCat)
+set(SHARED_LIBS GoldenCat Qt5::Widgets Qt5::Core)
 SWIG_LINK_LIBRARIES(EverydayMoose ${SHARED_LIBS})
