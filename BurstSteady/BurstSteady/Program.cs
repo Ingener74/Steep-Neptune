@@ -12,6 +12,9 @@ namespace BurstSteady
 
 			var qstr = QString.fromStdString ("Test");
 
+			Console.WriteLine (qstr.size ());
+			Console.WriteLine (qstr.isEmpty ());
+
 			goldenCat.test (qstr);
 		}
 	}
